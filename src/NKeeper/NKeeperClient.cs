@@ -2,6 +2,7 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 using NKeeper.Models;
 
 namespace NKeeper
@@ -21,7 +22,13 @@ namespace NKeeper
         {
             var httpClient = new HttpClient();
             var data = await httpClient.GetStringAsync(API_ADDRESS);
-            var cards = await Task.Factory.StartNew(() => { return JsonConvert.DeserializeObject<IEnumerable<Card>>(data); });
+            var cards = await Task.Factory.StartNew(() => 
+            {
+                var settings = new JsonSerializerSettings();
+                settings.Converters.Add(new StringEnumConverter());
+
+                return JsonConvert.DeserializeObject<IEnumerable<Card>>(data, settings);
+            });
 
             return new NKeeperClient()
             {

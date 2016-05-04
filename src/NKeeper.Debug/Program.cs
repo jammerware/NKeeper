@@ -31,13 +31,9 @@ namespace NKeeper.Debug
                 else
                 {
                     Console.WriteLine(card.Text);
-                    var url = client.GetCardImageUrl(card);
-
-                    Process proc = new Process();
-                    ProcessStartInfo info = new ProcessStartInfo(url);
-                    info.UseShellExecute = true;
-                    proc.StartInfo = info;
-                    proc.Start();
+                    Console.WriteLine(card.PlayerClass.ToString());
+                    Console.WriteLine(card.Set.ToString());
+                    Console.WriteLine(client.GetCardImageUrl(card));
                 }
             }
         }

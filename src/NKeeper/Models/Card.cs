@@ -7,13 +7,16 @@ namespace NKeeper.Models
         public string Id { get; set; }
         public string Name { get; set; }
         public string Text { get; set; }
-        public string Rarity { get; set; }
+        public Race Race { get; set; }
+        public Rarity Rarity { get; set; }
         public string Type { get; set; }
         public int Cost { get; set; }
         public int Attack { get; set; }
+        public int Durability { get; set; }
         public int Health { get; set; }
-        public string Set { get; set; }
-        public string Faction { get; set; }
+        public PlayerClass PlayerClass { get; set; }
+        public Set Set { get; set; }
+        public Faction Faction { get; set; }
         public string Artist { get; set; }
         public string Flavor { get; set; }
 
