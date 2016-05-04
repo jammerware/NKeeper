@@ -1,0 +1,24 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "NKeeper.Debug Console Application",
+  "authors": [ "bstein" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+    "NKeeper": ""
+  },
+
+  "commands": {
+    "NKeeper.Debug": "NKeeper.Debug"
+  },
+
+  "frameworks": {
+    "dnx46": { }
+  }
+}
