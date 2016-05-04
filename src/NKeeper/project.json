@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2-*",
+  "version": "1.0.3-*",
   "description": "NKeeper is a simple .NET library that makes accessing data about the digital CCG Hearthstone both easy and fly.",
   "authors": [ "Jammerware" ],
   "tags": [ "hearthstone" ],

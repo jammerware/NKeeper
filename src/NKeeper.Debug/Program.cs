@@ -32,7 +32,7 @@ namespace NKeeper.Debug
                 {
                     Console.WriteLine(card.Text);
                     Console.WriteLine(card.PlayerClass.ToString());
-                    Console.WriteLine(card.Set.ToString());
+                    Console.WriteLine(card.Type.ToString());
                     Console.WriteLine(client.GetCardImageUrl(card));
                 }
             }

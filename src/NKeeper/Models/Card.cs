@@ -9,7 +9,7 @@ namespace NKeeper.Models
         public string Text { get; set; }
         public Race Race { get; set; }
         public Rarity Rarity { get; set; }
-        public string Type { get; set; }
+        public CardType Type { get; set; }
         public int Cost { get; set; }
         public int Attack { get; set; }
         public int Durability { get; set; }
