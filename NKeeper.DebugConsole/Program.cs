@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Linq;
 
-namespace NKeeper.Debug
+namespace NKeeper.DebugConsole
 {
     public class Program
     {
@@ -10,8 +9,8 @@ namespace NKeeper.Debug
         {
             var client = NKeeperClient.CreateAsync().GetAwaiter().GetResult();
             Console.WriteLine(client.Cards.Count());
-            
-            while(true)
+
+            while (true)
             {
                 var cardName = Console.ReadLine();
                 if (cardName == "exit")
@@ -24,7 +23,7 @@ namespace NKeeper.Debug
                     .Where(c => string.Compare(c.Name, cardName, StringComparison.CurrentCultureIgnoreCase) == 0)
                     .FirstOrDefault();
 
-                if(card == null)
+                if (card == null)
                 {
                     Console.WriteLine("Couldn't find it.");
                 }

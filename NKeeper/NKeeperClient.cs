@@ -9,7 +9,9 @@ namespace NKeeper
 {
     public class NKeeperClient
     {
-        private const string API_ADDRESS = "https://api.hearthstonejson.com/v1/latest/enUS/cards.collectible.json";
+        // TODO: figure out how to tell HttpClient not to throw errors when redirected by 301
+        //private const string API_ADDRESS = "https://api.hearthstonejson.com/v1/latest/enUS/cards.collectible.json";
+        private const string API_ADDRESS = "http://api.hearthstonejson.com/v1/13921/enUS/cards.collectible.json";
         private const string CARD_IMAGE_URL_BASE = "http://wow.zamimg.com/images/hearthstone/cards/enus/original/";
         private const string CARD_IMAGE_GOLD_URL_BASE = "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/";
 

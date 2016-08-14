@@ -7,6 +7,7 @@
         Expert1 = 3,
         Reward = 4,
         Missions = 5,
+        KARA,
         Promo = 11,
         Naxx = 12,
         GVG = 13,

@@ -1,0 +1,23 @@
+﻿{
+  "version": "1.0.4-*",
+  "description": "NKeeper is a simple .NET library that makes accessing data about the digital CCG Hearthstone both easy and fly.",
+  "authors": [ "Jammerware, LLC" ],
+  "title": "NKeeper",
+
+  "packOptions": {
+    "tags": [ "hearthstone" ],
+    "licenseUrl": "http://www.wtfpl.net/",
+    "projectUrl": "https://github.com/jammerware/nkeeper"
+  },
+
+  "dependencies": {
+    "NETStandard.Library": "1.6.0",
+    "Newtonsoft.Json": "9.0.1"
+  },
+
+  "frameworks": {
+    "netstandard1.4": {
+      "imports": "dnxcore50"
+    }
+  }
+}
